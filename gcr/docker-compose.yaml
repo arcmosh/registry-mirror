@@ -1,7 +1,7 @@
 version: "3"
 services:
   gcr:
-    image: "registry:2.8.1"
+    image: "registry:2.8"
     container_name: "gcr"
     restart: "always"
     volumes:
@@ -9,4 +9,4 @@ services:
       - "./data:/var/lib/registry"
       - "./config.yml:/etc/docker/registry/config.yml"
     ports:
-      - "5003:5000"
+      - "127.0.0.1:5003:5000"

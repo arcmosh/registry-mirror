@@ -7,7 +7,7 @@ storage:
   maintenance:
     uploadpurging:
       enabled: true
-      age: 168h
+      age: 72h
       dryrun: false
       interval: 1m
 http:
